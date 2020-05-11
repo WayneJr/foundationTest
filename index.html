@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">     
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">     
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">     
+    <title>Colorist</title>
+  </head>
+  <body>
+    <div class="container background--orange">
+      <header class="row" id="main">
+        <div class="large-4 small-10 column">
+          <div class="brand">
+            <a href="#">Coloristic</a>
+          </div>
+        </div>
+        <input type="checkbox" class="ham-menu" id="ham-menu">
+        <label class="ham-menu-label" for="ham-menu">
+          <span></span>
+        </label>
+        <nav class="large-8 navgan column" id="main">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="button button--primary">Sign up</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="row feature">
+        <div class="large-5 column">
+          <h1>Niffy the great.</h1>
+        </div>
+        <div class="large-7 column">
+          <img src="img/laptop.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="container-spacey features">
+      <div class="row">
+        <div class="large-4 column">
+          <img src="img/plane.png" alt="">
+          <h5>Flat design</h5>
+          <p>Lorem ipsum dolor sit amet patisad, adipiscing elit. Nulla non congue sapien, insu tempus odio donec in.</p>
+        </div>
+        <div class="large-4 column">
+          <img src="img/heart.png" alt="">
+          <h5>Quality code</h5>
+          <p>Lorem ipsum dolor sit amet patisad, adipiscing elit. Nulla non congue sapien, insu tempus odio donec in.</p>
+        </div>
+        <div class="large-4 column">
+          <img src="img/cog.png" alt="">
+          <h5>Great support</h5>
+          <p>Lorem ipsum dolor sit amet patisad, adipiscing elit. Nulla non congue sapien, insu tempus odio donec in.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container background--green recent">
+      <h2>Recent works</h2>
+      <p>Lorem ipsum dolor sit amet patisad, adipiscing elit. Nulla non congue sapien, insu tempus odio donec in.</p>
+
+      <ul id="recentList" class="inline-list">
+        <li class="recList selected"><a href="#all">All</a></li>
+        <li class="recList"><a href="#web">Web</a></li>
+        <li class="recList"><a href="#mobile">Mobile</a></li>
+        <li class="recList"><a href="#design">Design</a></li>
+        <li class="recList"><a href="#photo">Photography</a></li>
+        <li class="recList"><a href="#type">Type</a></li>
+      </ul>
+
+      <div class="row">
+        <div class="large-4 column">
+          <div class="item background--grey">
+            <img src="img/robot.png" alt="">
+          </div>
+        </div>
+        <div class="large-4 column">
+          <div class="item background--white">
+            <img src="img/pizza.png" alt="">
+          </div>
+        </div>
+        <div class="large-4 column">
+          <div class="item background--red">
+            <img src="img/eyeball.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-4 column">
+          <div class="item background--yellow">
+            <img src="img/umbrella.png" alt="">
+          </div>
+        </div>
+        <div class="large-4 column">
+          <div class="item background--babyblue">
+            <img src="img/rocket.png" alt="">
+          </div>
+        </div>
+        <div class="large-4 column">
+          <div class="item background--paleblue">
+            <img src="img/jacket.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-4 column">
+          <div class="item background--slateblue">
+            <img src="img/ghost.png" alt="">
+          </div>
+        </div>
+        <div class="large-4 column">
+          <div class="item background--midnight">
+            <img src="img/ff.png" alt="">
+          </div>
+        </div>
+        <div class="large-4 column">
+          <div class="item background--blue">
+            <img src="img/utility.png" alt="">
+          </div>
+        </div>
+      </div>
+      
+      <a href="#" class="button button--secondary show-more">Show more</a>
+
+    </div>
+
+    <script>
+      var recentList = document.getElementById("recentList");
+      var items = recentList.getElementsByClassName("recList");
+      for (let i = 0; i < items.length; i++) {
+        items[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("selected");
+          current[0].className = current[0].className.replace(" selected", "");
+          this.className += " selected";
+        });
+      }
+    </script>
+  </body>
+</html>
