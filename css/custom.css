@@ -3,10 +3,7 @@
     --signButColor: #3A3A3A;
     --greenishpara: #96EABA;
     --recentgreen: #27AE60;
-<<<<<<< HEAD
     --headerorange: #f8bc3b;
-=======
->>>>>>> 0db174dc6110310e803f2ccd1dc24fb27e420884
 }
 
 body {
@@ -91,11 +88,9 @@ h5 {
 
 header#main {
     margin-bottom: 40px;
-<<<<<<< HEAD
     position: fixed;
     z-index: 200;
-=======
->>>>>>> 0db174dc6110310e803f2ccd1dc24fb27e420884
+
 }
 
 
@@ -173,19 +168,20 @@ nav#main ul li a:not(.button) {
         
     }
 
+    nav#main ul li a {
+        opacity: 0;
+        transition: opacity 250ms ease-in-out;
+    }
+
     nav {
-<<<<<<< HEAD
         width: 100%;
         background-color: var(--headerorange);
         /* display: none; */
         position: absolute;
-        transform: scale(1, 0);
-        transform-origin: top;
+        transform: scale(0, 1);
+        transform-origin: left;
         transition: transform 400ms ease-in-out;
-        
-=======
-        display: none;
->>>>>>> 0db174dc6110310e803f2ccd1dc24fb27e420884
+        /* display: none; */
     }
 
     .ham-menu {
@@ -224,12 +220,14 @@ nav#main ul li a:not(.button) {
     }
 
     .ham-menu:checked ~ nav {
-<<<<<<< HEAD
         /* display: block; */
         transform: scale(1, 1);
-=======
-        display: block;
->>>>>>> 0db174dc6110310e803f2ccd1dc24fb27e420884
+        transition: transform 600ms ease-in-out;
+    }
+
+    .ham-menu:checked ~ nav#main ul li a {
+        opacity: 1;
+        transition: opacity 700ms ease-in-out;
     }
 
 }
@@ -267,12 +265,7 @@ nav#main ul li a:not(.button) {
 */
 
 .feature {
-<<<<<<< HEAD
     margin-top: 5rem;
-
-=======
-    margin-top: 20px;
->>>>>>> 0db174dc6110310e803f2ccd1dc24fb27e420884
 }
 
 .feature h1 {
